@@ -7,21 +7,34 @@
     <title>Contact Us</title>
   </head>
   <body>
+    <h3>Have a question? Ask us here</h3>
     <div>
       <form method="post" action="mailto:bvelas932@mtroyal.ca">
         <fieldset>
           <legend>Have any additional questions ask here</legend>
-          <label for="fname">First Name*</label>
+          <label for="fname" autofocus>First Name*</label>
           <input type="text" name="fname" id="fname" required />
           <br />
           <label for="lname">Last Name*</label>
           <input type="text" name="lname" id="lname" required />
           <br />
           <label for="phone">Phone*</label>
-          <input type="phone" name="phone" id="phone" required />
+          <input
+            type="phone"
+            name="phone"
+            id="phone"
+            placeholder="(123)456-7890"
+            required
+          />
           <br />
           <label for="email">Email*</label>
-          <input type="email" name="email" id="email" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@xyz.com"
+            required
+          />
           <br />
         </fieldset>
         <fieldset>
@@ -34,6 +47,7 @@
             id="specialConcerns"
             placeholder="Anything else you would like to tell us?"
             cols="40"
+            required
           ></textarea>
           <br />
           <label for="newsLetter">Get our weekly news letter</label>
@@ -49,5 +63,17 @@
         <button type="reset">Reset</button>
       </form>
     </div>
+    <footer>
+      <p>Copyright &copy; 2025 PLACEHOLDER NAME</p>
+      <div>
+        <a href="https://www.instagram.com/"
+          ><img src="/images/instagram.svg" alt="instagram icon" width="2%"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="/images/facebook.svg" alt="facebook icon" width="2%"
+        /></a>
+        <a href="https://fontawesome.com/"><p>Icon by Font Awesome</p></a>
+      </div>
+    </footer>
   </body>
 </html>

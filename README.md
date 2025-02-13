@@ -7,19 +7,21 @@
   - stored in a local directory
   - Alt tags for all photos
 - An HTML comment anywhere
-- One external link (In footer - links to Instagram/Facebook w/ icons)
+- [x] One external link (In footer - links to Instagram/Facebook w/ icons)
 - At least one link to another place on the same page
 - A table with a merged (spanned) cell
-- Check all of form requirements
-  - Salutation
-  - X First name
-  - X Last name
-  - X Phone number
-  - X Email
-  - X Subject
-  - X Body textbox
-  - Control user flow
-    - All fields are require
-    - 'Autofocus' on First name
-    - placeholders for Email and Phone number
+- [x] Check all of form requirements
+  - [x] Salutation
+  - [x] First name
+  - [x] Last name
+  - [x] Phone number
+  - [x] Email
+  - [x] Subject
+  - [x] Body textbox
+  - [x] Control user flow
+    - [x] All fields are require
+    - [x] 'Autofocus' on First name
+    - [x] placeholders for Email and Phone number
 - Radio buttons with at least 2 dieerent options.
+- Write short paragraph for 'about us' page & find an image
+- Work on projects CSS
