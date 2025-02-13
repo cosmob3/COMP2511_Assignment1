@@ -8,7 +8,7 @@
   </head>
   <body>
     <div>
-      <form method="post" action="#">
+      <form method="post" action="mailto:bvelas932@mtroyal.ca">
         <fieldset>
           <legend>Have any additional questions ask here</legend>
           <label for="fname">First Name*</label>
@@ -31,11 +31,22 @@
           <br />
           <textarea
             name="text"
-            id="special_concerns"
+            id="specialConcerns"
             placeholder="Anything else you would like to tell us?"
             cols="40"
           ></textarea>
+          <br />
+          <label for="newsLetter">Get our weekly news letter</label>
+          <input type="checkbox" name="newsLetter" id="newsLetter" />
+          <br />
+          <label for="messageCopy"
+            >Get a copy of this message sent to you</label
+          >
+          <input type="checkbox" name="messageCopy" id="messageCopy" />
+          <br />
         </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
     </div>
   </body>
