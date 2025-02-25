@@ -1,3 +1,15 @@
 h1 {
   text-align: center;
 }
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 8fr 2fr;
+}
+.webLinks {
+  grid-column-start: 3;
+}
+.linkList {
+  display: flex;
+  justify-content: space-around;
+}
