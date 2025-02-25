@@ -1,0 +1,60 @@
+.pageLayout {
+  background-image: url(/images/yousef-espanioly-DA_tplYgTow-unsplash.jpg);
+  /* Photo by Yousef Espanioly on Unsplash*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h3 {
+  font-size: 50px;
+}
+
+.neonText {
+  animation: flicker 3s infinite alternate;
+  color: #ff10f0;
+}
+fieldset {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input,
+select,
+textarea {
+  color: white;
+  background-color: inherit;
+  border-radius: 30px;
+  padding: 1em 3em;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #ff10f0, 0 0 11px #ff10f0, 0 0 19px #ff10f0,
+      0 0 40px #aa00ff, 0 0 80px #aa00ff, 0 0 90px #aa00ff, 0 0 100px #aa00ff,
+      0 0 150px #aa00ff;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+footer {
+  color: white;
+}

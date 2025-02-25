@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Bryan Velasco" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/contact_us.css" />
     <title>Contact Us</title>
   </head>
-  <body>
+  <body class="pageLayout">
     <nav>
       <div>
         <a href="/index.html" class="logo"
@@ -21,40 +22,45 @@
         </ul>
       </div>
     </nav>
-    <h3>Have a question? Ask us here</h3>
+    <h3 class="neonText">Have a question? Ask us here</h3>
     <div>
       <form method="post" action="mailto:bvelas932@mtroyal.ca">
         <fieldset>
           <legend>Have any additional questions ask here</legend>
-          <label for="fname" autofocus>First Name*</label>
-          <input type="text" name="fname" id="fname" required />
+          <label for="fname" autofocus
+            >First Name* <input type="text" name="fname" id="fname" required
+          /></label>
           <br />
-          <label for="lname">Last Name*</label>
-          <input type="text" name="lname" id="lname" required />
+          <label for="lname"
+            >Last Name* <input type="text" name="lname" id="lname" required
+          /></label>
           <br />
-          <label for="phone">Phone*</label>
-          <input
-            type="phone"
-            name="phone"
-            id="phone"
-            placeholder="(123)456-7890"
-            required
-          />
+          <label for="phone"
+            >Phone*
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="(123)456-7890"
+              required
+          /></label>
           <br />
-          <label for="email">Email*</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="abc@xyz.com"
-            required
-          />
+          <label for="email"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="abc@xyz.com"
+              required
+          /></label>
           <br />
         </fieldset>
         <fieldset>
           <legend>Message Us!</legend>
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" required />
+          <label for="subject"
+            >Subject: <input type="text" id="subject" required
+          /></label>
           <br />
           <textarea
             name="text"
@@ -64,13 +70,15 @@
             required
           ></textarea>
           <br />
-          <label for="newsLetter">Get our weekly news letter</label>
-          <input type="checkbox" name="newsLetter" id="newsLetter" />
+          <label for="newsLetter"
+            >Get our weekly news letter
+            <input type="checkbox" name="newsLetter" id="newsLetter"
+          /></label>
           <br />
           <label for="messageCopy"
-            >Get a copy of this message sent to you</label
-          >
-          <input type="checkbox" name="messageCopy" id="messageCopy" />
+            >Get a copy of this message sent to you
+            <input type="checkbox" name="messageCopy" id="messageCopy" />
+          </label>
           <br />
         </fieldset>
         <button type="submit">Submit</button>

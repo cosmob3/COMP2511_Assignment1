@@ -2,7 +2,7 @@
 
 ## TODO
 
-- Work on NavBar (w/ logo and links to other pages)
+- [x] Work on NavBar (w/ logo and links to other pages)
 - At least one photo w/ <figure> and <figcaption>
   - stored in a local directory
   - Alt tags for all photos
@@ -25,3 +25,4 @@
 - Radio buttons with at least 2 dieerent options.
 - Write short paragraph for 'about us' page & find an image
 - Work on projects CSS
+- Codepen [sample](https://codepen.io/cosmob3/pen/PwoNrWq) for form
