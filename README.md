@@ -25,4 +25,7 @@
 - Radio buttons with at least 2 dieerent options.
 - Write short paragraph for 'about us' page & find an image
 - Work on projects CSS
+
+---
+
 - Codepen [sample](https://codepen.io/cosmob3/pen/PwoNrWq) for form

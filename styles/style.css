@@ -1,5 +1,18 @@
+.pageLayout {
+  background-image: url(/images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+
+  /* Photo by Yousef Espanioly on Unsplash*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 h1 {
-  text-align: center;
+  font-size: 3em;
+}
+.neonText {
+  animation: flicker 3s infinite alternate;
+  color: #ff10f0;
 }
 
 nav {
@@ -12,4 +25,40 @@ nav {
 .linkList {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
+  font-size: x-large;
+}
+img {
+  margin: 1em;
+}
+
+footer div {
+  /* display: flex; */
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #ff10f0, 0 0 11px #ff10f0, 0 0 19px #ff10f0,
+      0 0 40px #aa00ff, 0 0 80px #aa00ff, 0 0 90px #aa00ff, 0 0 100px #aa00ff,
+      0 0 150px #aa00ff;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
