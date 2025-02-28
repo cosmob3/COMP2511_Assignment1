@@ -1,9 +1,28 @@
+/* Styles for the contact us page */
+
+#contact-form {
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
 fieldset {
   color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #aa00ff;
+}
+
+legend {
+  color: #ff10f0;
+  font-weight: bold;
+  padding: 0 10px;
 }
 
 input,
@@ -11,10 +30,16 @@ select,
 textarea {
   color: white;
   font-size: medium;
-  background-color: inherit;
+  background-color: rgba(50, 50, 50, 0.5);
   border-radius: 30px;
   margin: 5px 0px;
   padding: 1em;
+  border: 1px solid #aa00ff;
+}
+
+/* Using contextual selector */
+fieldset label {
+  margin: 0.5em 0;
 }
 
 ::placeholder {
@@ -22,8 +47,36 @@ textarea {
   opacity: 1;
 }
 
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0.5em 0;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
 button {
+  background-color: #aa00ff;
+  color: white;
+  border: none;
   border-radius: 30px;
   padding: 8px 20px;
   margin: 0px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff10f0;
+}
+
+/* Required fields styling with attribute selector */
+input[required] {
+  border-left: 3px solid #ff10f0;
 }

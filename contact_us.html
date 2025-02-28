@@ -3,107 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Bryan Velasco" />
+    <meta name="author" content="Bryan Velasco, Yossef Eldesouki" />
+    <meta name="description" content="Contact the xxxxx team with your questions about learning to code or web development." />
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/contact_us.css" />
-    <title>Contact Us</title>
+    <title>Contact xxxxx</title>
   </head>
   <body class="pageLayout">
-    <nav>
-      <div>
-        <a href="/index.html" class="logo"
-          ><img src="/images/ghost-solid.svg" alt="Logo" width="50%"
-        /></a>
-      </div>
-      <div class="webLinks">
-        <ul class="linkList">
-          <a href="/about_us.html"><li>About Us</li></a>
-          <a href="/contact_us.html"><li>Contact Us</li></a>
-        </ul>
-      </div>
-    </nav>
-    <h1 class="neonText">
-      Have a question?<br />
-      Ask us here
-    </h1>
-    <div>
-      <form method="post" action="mailto:bvelas932@mtroyal.ca">
-        <fieldset>
-          <legend>Have any additional questions ask here</legend>
-          <label for="fname" autofocus
-            >First Name* <input type="text" name="fname" id="fname" required
-          /></label>
-          <br />
-          <label for="lname"
-            >Last Name* <input type="text" name="lname" id="lname" required
-          /></label>
-          <br />
-          <label for="phone"
-            >Phone*
-            <input
-              type="phone"
-              name="phone"
-              id="phone"
-              placeholder="(123)456-7890"
-              required
-          /></label>
-          <br />
-          <label for="email"
-            >Email*
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="abc@xyz.com"
-              required
-          /></label>
-          <br />
-        </fieldset>
-        <fieldset>
-          <legend>Message Us!</legend>
-          <label for="subject"
-            >Subject: <input type="text" id="subject" required
-          /></label>
+    <header>
+      <nav>
+        <div>
+          <a href="/index.html" class="logo"
+            ><img src="/images/ghost-solid.svg" alt="Logo" width="50%"
+          /></a>
+        </div>
+        <div class="webLinks">
+          <ul class="linkList">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about_us.html">About Us</a></li>
+            <li><a href="/contact_us.html" class="active">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <h1 class="neonText">
+        Have a question?<br />
+        Ask us here
+      </h1>
+      
+      <section id="contact-form">
+        <form method="post" action="mailto:bvelas932@mtroyal.ca">
+          <fieldset>
+            <legend>Contact Information</legend>
+            
+            <div class="form-group">
+              <label for="salutation">Salutation*</label>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="salutation" value="mr" required> Mr.
+                </label>
+                <label>
+                  <input type="radio" name="salutation" value="ms"> Ms.
+                </label>
+                <label>
+                  <input type="radio" name="salutation" value="dr"> Dr.
+                </label>
+                <label>
+                  <input type="radio" name="salutation" value="other"> Other
+                </label>
+              </div>
+            </div>
+            
+            <label for="fname">
+              First Name* <input type="text" name="fname" id="fname" required autofocus />
+            </label>
+            
+            <label for="lname">
+              Last Name* <input type="text" name="lname" id="lname" required />
+            </label>
+            
+            <label for="phone">
+              Phone*
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="(123)456-7890"
+                pattern="^\(\d{3}\)\d{3}-\d{4}$"
+                required
+              />
+            </label>
+            
+            <label for="email">
+              Email*
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="abc@xyz.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+            </label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Message Us!</legend>
+            
+            <label for="subject">
+              Subject* <input type="text" id="subject" name="subject" required />
+            </label>
 
-          <textarea
-            name="text"
-            id="specialConcerns"
-            placeholder="Anything else you would like to tell us?"
-            required
-          ></textarea>
-          <br />
-          <label for="newsLetter"
-            >Get our weekly news letter
-            <input type="checkbox" name="newsLetter" id="newsLetter"
-          /></label>
-          <br />
-          <label for="messageCopy"
-            >Get a copy of this message sent to you
-            <input type="checkbox" name="messageCopy" id="messageCopy" />
-          </label>
-          <br />
-        </fieldset>
-        <br />
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </form>
-    </div>
+            <label for="interest">What are you interested in learning?*</label>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="interest" value="html" required> HTML/CSS
+              </label>
+              <label>
+                <input type="radio" name="interest" value="javascript"> JavaScript
+              </label>
+              <label>
+                <input type="radio" name="interest" value="python"> Python
+              </label>
+              <label>
+                <input type="radio" name="interest" value="other"> Other
+              </label>
+            </div>
+
+            <label for="specialConcerns">
+              Message*
+              <textarea
+                name="text"
+                id="specialConcerns"
+                placeholder="Anything else you would like to tell us?"
+                required
+              ></textarea>
+            </label>
+            
+            <div class="checkbox-group">
+              <label for="newsLetter">
+                <input type="checkbox" name="newsLetter" id="newsLetter" />
+                Get our weekly newsletter
+              </label>
+              
+              <label for="messageCopy">
+                <input type="checkbox" name="messageCopy" id="messageCopy" />
+                Get a copy of this message sent to you
+              </label>
+            </div>
+          </fieldset>
+          
+          <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    
     <footer id="footer">
-      <p>Copyright &copy; 2025 PLACEHOLDER NAME</p>
+      <p>Copyright &copy; 2025 xxxxx</p>
       <div class="icons">
-        <a href="https://www.instagram.com/"
+        <a href="https://www.instagram.com/" target="_blank"
           ><img
             src="/images/instagram-brands.svg"
             alt="instagram icon"
             width="15%"
         /></a>
-        <a href="https://www.facebook.com/"
+        <a href="https://www.facebook.com/" target="_blank"
           ><img
             src="/images/facebook-brands.svg"
             alt="facebook icon"
             width="15%"
         /></a>
-        <a href="https://fontawesome.com/"><p>Icon by Font Awesome</p></a>
+        <a href="https://fontawesome.com/" target="_blank"><p>Icon by Font Awesome</p></a>
       </div>
     </footer>
   </body>

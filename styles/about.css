@@ -1,0 +1,40 @@
+/* Styles specific to the about page */
+
+#mission, #team {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .team-member {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 5px;
+  }
+  
+  .float-right {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    max-width: 200px;
+    border-radius: 5px;
+  }
+  
+  /* Using attribute selector */
+  a[href^="#"] {
+    color: #ff10f0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a[href^="#"]:hover {
+    text-decoration: underline;
+  }
+  
+  /* Using pseudo class selector */
+  ul li:hover {
+    color: #aa00ff;
+  }

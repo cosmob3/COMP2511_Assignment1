@@ -3,41 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Bryan Velasco" />
+    <meta name="author" content="Bryan Velasco, Yossef Eldesouki" />
+    <meta name="description" content="Learn web development and coding with xxxxx - your resource for HTML, CSS, JavaScript and more." />
     <link rel="stylesheet" href="/styles/style.css" />
-    <title>COMP2511_Assignment1</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>xxxxx - Learn to Code</title>
   </head>
   <body class="pageLayout">
-    <nav>
-      <div>
-        <a href="/index.html" class="logo"
-          ><img src="/images/ghost-solid.svg" alt="Logo" width="50%"
-        /></a>
-      </div>
-      <div class="webLinks">
-        <ul class="linkList">
-          <a href="/about_us.html"><li>About Us</li></a>
-          <a href="/contact_us.html"><li>Contact Us</li></a>
-        </ul>
-      </div>
-    </nav>
-    <h1 class="neonText">Home page</h1>
+    <header>
+      <nav>
+        <div>
+          <a href="/index.html" class="logo"
+            ><img src="/images/ghost-solid.svg" alt="Logo" width="50%"
+          /></a>
+        </div>
+        <div class="webLinks">
+          <ul class="linkList">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about_us.html">About Us</a></li>
+            <li><a href="/contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <h1 class="neonText">Welcome to xxxxx</h1>
+      
+      <section id="intro">
+        <h2>Start Your Coding Journey Today</h2>
+        <p>xxxxx is your ultimate resource for learning web development and programming languages. Whether you're a beginner or looking to enhance your skills, we've got tutorials and resources for everyone.</p>
+        <a href="#languages">Explore Languages</a>
+      </section>
+      
+      <section id="languages">
+        <h2>Featured Languages</h2>
+        
+        <article>
+          <h3>HTML5</h3>
+          <figure>
+            <img src="/images/html5.png" alt="HTML5 Logo" />
+            <figcaption>HTML5: The backbone of the web</figcaption>
+          </figure>
+          <p>HTML5 is the latest evolution of the standard that defines HTML. It includes new elements and attributes that reflect typical usage on modern websites.</p>
+          <p class="first-paragraph">The first step in web development is learning <strong>HTML</strong> - the markup language that structures web content.</p>
+        </article>
+        
+        <article>
+          <h3>Popular Programming Languages</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Language</th>
+                <th>Primary Use</th>
+                <th colspan="2">Difficulty Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Web Structure</td>
+                <td>Beginner</td>
+                <td>★☆☆</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Web Styling</td>
+                <td>Beginner</td>
+                <td>★★☆</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Web Interactivity</td>
+                <td>Intermediate</td>
+                <td>★★★</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>General Purpose</td>
+                <td>Beginner</td>
+                <td>★★☆</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+    
     <footer id="footer">
-      <p>Copyright &copy; 2025 PLACEHOLDER NAME</p>
+      <p>Copyright &copy; 2025 xxxxx</p>
       <div class="icons">
-        <a href="https://www.instagram.com/"
+        <a href="https://www.instagram.com/" target="_blank"
           ><img
             src="/images/instagram-brands.svg"
             alt="instagram icon"
             width="15%"
         /></a>
-        <a href="https://www.facebook.com/"
+        <a href="https://www.facebook.com/" target="_blank"
           ><img
             src="/images/facebook-brands.svg"
             alt="facebook icon"
             width="15%"
         /></a>
-        <a href="https://fontawesome.com/"><p>Icon by Font Awesome</p></a>
+        <a href="https://fontawesome.com/" target="_blank"><p>Icon by Font Awesome</p></a>
       </div>
     </footer>
   </body>
