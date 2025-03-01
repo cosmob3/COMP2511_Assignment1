@@ -17,11 +17,14 @@ body {
   background-attachment: fixed;
 }
 
-header, main {
+header,
+main {
   padding: 1em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: white;
 }
 
@@ -58,6 +61,7 @@ nav {
 
 .linkList li {
   margin: 0 10px;
+  text-align: center;
 }
 
 .linkList a {
@@ -121,7 +125,7 @@ figcaption {
   margin: 0 10px;
 }
 
-/* Animation */
+/* Neon Sign Animation */
 @keyframes flicker {
   0%,
   18%,
